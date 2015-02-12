@@ -27,5 +27,13 @@
   "keywords": [
     "webfont",
     "webfonts"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanamura/webfont-injector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanamura/webfont-injector/issues"
+  },
+  "homepage": "https://github.com/hanamura/webfont-injector"
 }
