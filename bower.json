@@ -1,0 +1,22 @@
+{
+  "name": "webfont-injector",
+  "main": "webfont-injector.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hanamura/webfont-injector",
+  "authors": [
+    "Taro Hanamura <m@hanamurataro.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "description": "Simple APIs to load dynamic subsetting webfonts asynchronously",
+  "keywords": [
+    "webfont",
+    "webfonts"
+  ]
+}
