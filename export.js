@@ -1,0 +1,1 @@
+window.WebfontInjector = require('./index');
