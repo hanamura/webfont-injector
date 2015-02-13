@@ -50,9 +50,12 @@ module.exports = function(elements, text, fontName, newFontName) {
 
       for (var i = 0; i < elements.length; ++i) {
         element = elements[i];
-        names = parse(element.style.fontFamily);
-        names.unshift(newFontName);
-        element.style.fontFamily = stringify(names);
+        names = parse(getComputedStyle(element).fontFamily);
+        index = names.indexOf(fontName);
+        if (~ index) {
+          names.splice(index, 1, newFontName);
+          element.style.fontFamily = stringify(names);
+        }
       }
 
       // finish
@@ -118,9 +121,12 @@ module.exports = function(elements, text, fontName, newFontName) {
 
       for (var i = 0; i < elements.length; ++i) {
         element = elements[i];
-        names = parse(element.style.fontFamily);
-        names.unshift(newFontName);
-        element.style.fontFamily = stringify(names);
+        names = parse(getComputedStyle(element).fontFamily);
+        index = names.indexOf(fontName);
+        if (~ index) {
+          names.splice(index, 1, newFontName);
+          element.style.fontFamily = stringify(names);
+        }
       }
 
       // finish
