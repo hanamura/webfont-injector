@@ -27,7 +27,7 @@ gulp.task 'export', ->
         pkg.name + '.min.js'
 
 gulp.task 'export-pkgd', ->
-  build './export-pkgd.js', \
+  build './export.pkgd.js', \
         pkg.name + '.pkgd.js', \
         pkg.name + '.pkgd.min.js'
 
